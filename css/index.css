@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+header,
+main {
+    width: 600px;
+    margin: auto;
+}
+
+header {
+    color: white;
+    height: 60px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+nav ::after{
+    display: block;
+    clear: both;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav ul ul{
+    background-color: darkgreen;
+    height: 10vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+ul li {
+    width: 25%;
+    position: relative;
+    line-height: 10vh;
+}
+li ul{
+    position: absolute;
+    width: 100%;
+    background-color: darkseagreen;
+    display: none;
+
+}
+
+li ul :hover ul{
+    display: block;
+}
