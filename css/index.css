@@ -11,44 +11,48 @@ main {
     margin: auto;
 }
 
-header {
+
+nav{
+    margin-bottom: 20px;
     color: white;
-    height: 60px;
-    margin-bottom: 30px;
-    position: relative;
+}
+nav>ul{
+    background-color: darkslategray;
 }
 
-nav ::after{
+nav>ul::after{
+    content: '';
     display: block;
     clear: both;
 }
 
 nav>ul>li {
     float: left;
+    line-height: 40px;
+    width: 25%;
     position: relative;
+}
+
+nav li{
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 nav ul ul{
-    background-color: darkgreen;
-    height: 10vh;
+    background-color: cadetblue;
     position: absolute;
     left: 0;
     width: 100%;
-}
-
-ul li {
-    width: 25%;
-    position: relative;
-    line-height: 10vh;
-}
-li ul{
-    position: absolute;
-    width: 100%;
-    background-color: darkseagreen;
     display: none;
-
+}
+nav ul ul li {
+    font-size: .7em;
 }
 
-li ul :hover ul{
+nav>ul>li:hover ul{
     display: block;
+}
+main p {
+    text-align: justify;
+    word-break: break-all;
 }
